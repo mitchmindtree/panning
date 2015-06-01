@@ -30,3 +30,17 @@ pub fn pan(pan: f32) -> [f32; 2] {
     }
 }
 
+/// Return the channel amplitudes for a centred pan.
+pub fn centre() -> [f32; 2] {
+    [MINUS_3_DECIBELS, MINUS_3_DECIBELS]
+}
+
+/// Return the channel amplitudes for a hard-left pan.
+pub fn hard_left() -> [f32; 2] {
+    [1.0, 0.0]
+}
+
+/// Return the channel amplitudes for a hard-right pan.
+pub fn hard_right() -> [f32; 2] {
+    [0.0, 1.0]
+}
